@@ -1,7 +1,7 @@
 {
   "name": "rpgmts",
   "version": "1.0.0",
-  "description": "",
+  "description": "🏰Toolkit for building RPG Maker MV/MZ plugins with TypeScript",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
@@ -11,10 +11,17 @@
   "bin": {
     "rpgmts": "./dist/cli.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "rpg-maker",
+    "rpg-maker-mv",
+    "rpg-maker-mz"
+  ],
+  "author": "OfficialCRUGG <me@crg.sh>",
   "license": "MIT",
   "packageManager": "pnpm@10.33.0",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@clack/prompts": "^1.8.1",
     "c12": "3.3.4",
