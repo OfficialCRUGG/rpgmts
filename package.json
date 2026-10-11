@@ -1,42 +1,18 @@
 {
-  "name": "rpgmts",
-  "version": "0.1.0",
-  "description": "🏰Toolkit for building RPG Maker MV/MZ plugins with TypeScript",
-  "main": "dist/index.js",
-  "type": "module",
+  "name": "rpgmts-monorepo",
+  "version": "0.0.0",
+  "private": "true",
   "scripts": {
-    "dev": "tsx src/cli/index.ts",
-    "build": "tsc"
+    "build": "pnpm run build",
+    "docs:rpgmts": "typedoc --options packages/rpgmts/typedoc.json",
+    "build-docs": "pnpm run docs:rpgmts && node postprocess-docs.cjs"
   },
-  "bin": {
-    "rpgmts": "./dist/cli/index.js"
-  },
-  "keywords": [
-    "rpg-maker",
-    "rpg-maker-mv",
-    "rpg-maker-mz"
-  ],
-  "author": "OfficialCRUGG <me@crg.sh>",
+  "keywords": [],
+  "author": "",
   "license": "MIT",
   "packageManager": "pnpm@10.33.0",
-  "files": [
-    "dist/",
-    "templates/"
-  ],
-  "dependencies": {
-    "@clack/prompts": "^1.8.1",
-    "c12": "3.3.4",
-    "citty": "^0.2.2",
-    "confbox": "^0.3.1",
-    "consola": "^3.4.2",
-    "esbuild": "^0.28.2",
-    "handlebars": "^4.7.10",
-    "jiti": "^2.7.0",
-    "zod": "^4.6.5"
-  },
   "devDependencies": {
-    "@types/node": "^26.6.4",
-    "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typedoc": "^0.28.20",
+    "typedoc-material-theme": "^1.4.1"
   }
 }

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rpgmts Docs</title>
+    <style>
+      :root {
+        --md-sys-color-primary: #9600d3;
+        --md-sys-color-on-primary: #ffffff;
+        --md-sys-color-primary-container: #f7d9ff;
+        --md-sys-color-on-primary-container: #310048;
+        --md-sys-color-secondary: #68596d;
+        --md-sys-color-on-secondary: #ffffff;
+        --md-sys-color-secondary-container: #f0dcf4;
+        --md-sys-color-on-secondary-container: #231728;
+        --md-sys-color-tertiary: #815251;
+        --md-sys-color-on-tertiary: #ffffff;
+        --md-sys-color-tertiary-container: #ffdad9;
+        --md-sys-color-on-tertiary-container: #331111;
+        --md-sys-color-error: #ba1a1a;
+        --md-sys-color-on-error: #ffffff;
+        --md-sys-color-error-container: #ffdad6;
+        --md-sys-color-on-error-container: #410002;
+        --md-sys-color-background: #fffbff;
+        --md-sys-color-on-background: #1e1b1e;
+        --md-sys-color-surface: #fffbff;
+        --md-sys-color-on-surface: #1e1b1e;
+        --md-sys-color-surface-variant: #ebdfea;
+        --md-sys-color-on-surface-variant: #4c444d;
+        --md-sys-color-outline: #7d747e;
+        --md-sys-color-outline-variant: #cec3ce;
+        --md-sys-color-shadow: #000000;
+        --md-sys-color-scrim: #000000;
+        --md-sys-color-inverse-surface: #332f33;
+        --md-sys-color-inverse-on-surface: #f6eff3;
+        --md-sys-color-inverse-primary: #e9b3ff;
+        --md-sys-color-surface-dim: #dfd8dc;
+        --md-sys-color-surface-bright: #fff7fc;
+        --md-sys-color-surface-container-lowest: #ffffff;
+        --md-sys-color-surface-container-low: #f9f1f6;
+        --md-sys-color-surface-container: #f3ecf0;
+        --md-sys-color-surface-container-high: #eee6eb;
+        --md-sys-color-surface-container-highest: #e8e0e5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --md-sys-color-primary: #e9b3ff;
+          --md-sys-color-on-primary: #510074;
+          --md-sys-color-primary-container: #7300a2;
+          --md-sys-color-on-primary-container: #f7d9ff;
+          --md-sys-color-secondary: #d4c0d8;
+          --md-sys-color-on-secondary: #392c3e;
+          --md-sys-color-secondary-container: #504255;
+          --md-sys-color-on-secondary-container: #f0dcf4;
+          --md-sys-color-tertiary: #f5b7b6;
+          --md-sys-color-on-tertiary: #4c2525;
+          --md-sys-color-tertiary-container: #663b3a;
+          --md-sys-color-on-tertiary-container: #ffdad9;
+          --md-sys-color-error: #ffb4ab;
+          --md-sys-color-on-error: #690005;
+          --md-sys-color-error-container: #93000a;
+          --md-sys-color-on-error-container: #ffb4ab;
+          --md-sys-color-background: #1e1b1e;
+          --md-sys-color-on-background: #e8e0e5;
+          --md-sys-color-surface: #1e1b1e;
+          --md-sys-color-on-surface: #e8e0e5;
+          --md-sys-color-surface-variant: #4c444d;
+          --md-sys-color-on-surface-variant: #cec3ce;
+          --md-sys-color-outline: #978e97;
+          --md-sys-color-outline-variant: #4c444d;
+          --md-sys-color-shadow: #000000;
+          --md-sys-color-scrim: #000000;
+          --md-sys-color-inverse-surface: #e8e0e5;
+          --md-sys-color-inverse-on-surface: #332f33;
+          --md-sys-color-inverse-primary: #9600d3;
+          --md-sys-color-surface-dim: #151216;
+          --md-sys-color-surface-bright: #3c383c;
+          --md-sys-color-surface-container-lowest: #100d10;
+          --md-sys-color-surface-container-low: #1e1b1e;
+          --md-sys-color-surface-container: #221f22;
+          --md-sys-color-surface-container-high: #2c292c;
+          --md-sys-color-surface-container-highest: #373437;
+        }
+      }
+    </style>
+    <style>
+      body {
+        background-color: var(--md-sys-color-surface-container);
+        color: var(--md-sys-color-on-surface);
+        font-size: 16px;
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      h1,
+      p {
+        margin: 0;
+      }
+      #card {
+        background-color: var(--md-sys-color-surface);
+        padding: 1.25rem 1.75rem;
+        border-radius: 28px;
+      }
+      h1 {
+        font-size: 1.875rem;
+        margin-bottom: 0.67rem;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 0.67rem;
+      }
+      li a {
+        background-color: var(--md-sys-color-primary);
+        color: var(--md-sys-color-on-primary);
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        text-decoration: none;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <h1>rpgmts</h1>
+      <p>
+        Welcome to the rpgmts project documentation. Please select a package
+        below to see its documentation.
+      </p>
+      <ul>
+        <li>
+          <a href="rpgmts/index.html">rpgmts (core package)</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

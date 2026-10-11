@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "tsconfig": "tsconfig.json",
+  "out": "../../docs/rpgmts",
+  "name": "rpgmts",
+  "plugin": ["typedoc-material-theme"],
+  "themeColor": "#B633F5",
+  "navigationLinks": {
+    "Home": "/",
+    "rpgmts": "/rpgmts",
+    "GitHub": "https://github.com/OfficialCRUGG/rpgmts"
+  }
+}
