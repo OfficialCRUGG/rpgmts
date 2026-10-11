@@ -29,6 +29,13 @@ const packageManagerOptions: InitOptions["packageManager"][] = [
   "nub",
 ];
 
+function handleCancel<T>(value: T): asserts value is Exclude<T, symbol> {
+  if (isCancel(value)) {
+    cancel("Operation cancelled.");
+    process.exit(0);
+  }
+}
+
 export async function initWizard(initialPath?: string): Promise<InitOptions> {
   intro("Create a new rpgmts project");
 
@@ -63,10 +70,7 @@ async function promptPath(initialPath?: string): Promise<string> {
     },
   });
 
-  if (isCancel(result)) {
-    cancel("Operation cancelled.");
-    process.exit(0);
-  }
+  handleCancel(result);
 
   const projectPath = resolve(result);
 

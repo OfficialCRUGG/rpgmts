@@ -1,7 +1,7 @@
 import { defineCommand } from "citty";
-import { initWizard } from "../lib/init-wizard.js";
-import { scaffoldProject } from "../lib/init-scaffold.js";
-import { installProject } from "../lib/init-install.js";
+import { initWizard } from "../../core/init/wizard.js";
+import { scaffoldProject } from "../../core/init/scaffold.js";
+import { installProject } from "../../core/init/install.js";
 
 export const initCommand = defineCommand({
   meta: {

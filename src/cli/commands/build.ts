@@ -1,7 +1,7 @@
 import { loadConfig } from "c12";
 import { defineCommand } from "citty";
-import { type RpgmtsConfig, type PluginConfig } from "../schema/config.js";
-import { buildPlugin } from "../lib/build.js";
+import { type RpgmtsConfig, type PluginConfig } from "../../schema/config.js";
+import { buildPlugin } from "../../core/build/build.js";
 import { consola } from "consola";
 
 export const buildCommand = defineCommand({

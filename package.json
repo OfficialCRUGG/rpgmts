@@ -5,11 +5,11 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/cli.ts",
+    "dev": "tsx src/cli/index.ts",
     "build": "tsc"
   },
   "bin": {
-    "rpgmts": "./dist/cli.js"
+    "rpgmts": "./dist/cli/index.js"
   },
   "keywords": [
     "rpg-maker",

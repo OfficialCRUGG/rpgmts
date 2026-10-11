@@ -1,5 +1,5 @@
 import { execFile, spawn } from "child_process";
-import type { InitOptions } from "./init-wizard.js";
+import type { InitOptions } from "./wizard.js";
 import path from "path";
 import { access } from "fs/promises";
 

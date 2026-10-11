@@ -1,5 +1,5 @@
 import { basename, join } from "path";
-import type { InitOptions } from "./init-wizard.js";
+import type { InitOptions } from "./wizard.js";
 import {
   copyFile,
   mkdir,

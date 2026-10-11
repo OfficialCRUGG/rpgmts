@@ -1,5 +1,5 @@
-import { type PluginParameter } from "../schema/parameters.js";
-import { type PluginMetadata } from "../schema/plugin.js";
+import { type PluginParameter } from "../../schema/parameters.js";
+import { type PluginMetadata } from "../../schema/plugin.js";
 
 export function assembleHeader(metadata: PluginMetadata): string {
   const headerLines: string[] = [];
@@ -64,13 +64,11 @@ export function assembleHeader(metadata: PluginMetadata): string {
     if ("on" in param && param.on) pushAnnotation("on", param.on);
     if ("off" in param && param.off) pushAnnotation("off", param.off);
     if ("options" in param && param.options) {
-      for (const option of param.options) {
+      for (const [index, option] of param.options.entries()) {
         pushAnnotation("option", option);
-        if (
-          "values" in param &&
-          param.values?.[param.options.indexOf(option)]
-        ) {
-          pushAnnotation("value", param.values[param.options.indexOf(option)]);
+
+        if ("values" in param && param.values?.[index] !== undefined) {
+          pushAnnotation("value", param.values[index]);
         }
       }
     }
