@@ -1,0 +1,11 @@
+import { type RpgmtsConfig } from "rpgmts";
+
+export default {
+  entrypoint: "src/index.ts",
+  target: "dist/{{name}}.js",
+  minify: false,
+  metadata: {
+    plugindesc: "A new plugin created with rpgmts",
+    author: "Your Name",
+  },
+} satisfies RpgmtsConfig;
