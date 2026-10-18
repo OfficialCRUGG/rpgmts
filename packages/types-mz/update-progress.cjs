@@ -103,17 +103,17 @@ function readCheckedSymbols(section) {
   let currentFile = null;
 
   for (const line of section.split(/\r?\n/)) {
-    const fileMatch = line.match(/^- ([^ (]+) \(\d+\/\d+\)\s*$/);
+    const fileMatch = line.match(/^- ([^:]+): \d+% \(\d+\/\d+\)\s*$/);
 
     if (fileMatch) {
       currentFile = fileMatch[1].trim();
       continue;
     }
 
-    const symbolMatch = line.match(/^\s+- \[([ xX])\] (\S+)\s*$/);
+    const symbolMatch = line.match(/^\s+- \[([ xX])\] (.+?)\s*$/);
 
     if (currentFile && symbolMatch && symbolMatch[1].toLowerCase() === "x") {
-      checked.push([currentFile, symbolMatch[2]]);
+      checked.push([currentFile, symbolMatch[2].replace(/^\*(.*?)\*$/, "$1")]);
     }
   }
 
@@ -175,6 +175,8 @@ function updateAnySection(files, oldSection) {
 function updateMembersSection(files, oldSection) {
   const allSymbols = [];
   const checked = readCheckedSymbols(oldSection);
+  console.log("Old section:\n", oldSection);
+  console.log("Parsed checked symbols:", JSON.stringify(checked, null, 2));
   const lines = [];
   const unmappedGlobalsSymbol = "Unmapped globals";
 

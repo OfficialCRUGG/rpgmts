@@ -1,11 +1,12 @@
 {
   "name": "@rpgmts/types-mz",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🏰 Type definitions for RPG Maker MZ",
   "types": "types/index.d.ts",
   "type": "module",
   "scripts": {
-    "extract-types": "node extract-types.cjs"
+    "extract-types": "node extract-types.cjs",
+    "update-progress": "node update-progress.cjs"
   },
   "keywords": [
     "rpg-maker",

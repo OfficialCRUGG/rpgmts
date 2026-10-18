@@ -1637,6 +1637,18 @@ declare namespace WebAudio {
 declare function Video(): void;
 declare namespace Video {
   /**
+   * The HTML video element used for video playback.
+   */
+  let _element: null | HTMLVideoElement;
+  /**
+   * Indicates whether a video is currently loading.
+   */
+  let _loading: boolean;
+  /**
+   * The current volume for video playback (0 to 1).
+   */
+  let _volume: number;
+  /**
    * Initializes the video system.
    *
    * @param {number} width - The width of the video.
@@ -1672,7 +1684,7 @@ declare namespace Video {
   function _onLoad(): void;
   function _onError(): never;
   function _onEnd(): void;
-  function _updateVisibility(videoVisible: any): void;
+  function _updateVisibility(videoVisible: boolean): void;
   function _isVisible(): boolean;
   function _setupEventHandlers(): void;
   function _onUserGesture(): void;

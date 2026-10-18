@@ -7,9 +7,9 @@ These type definitions were initially generated from RPG Maker MZ's JavaScript f
 The goal is to eliminate all usage of the `any` type in the type definitions. This section tracks the progress of that effort.
 
 <!-- START: ANY_TYPES -->
-**Total: 0% (0/3366)**
-- main: 0% (0/8)
-- rmmz_core: 0% (0/301)
+**Total: 0% (9/3366)**
+- main: 100% (8/8)
+- rmmz_core: 0% (1/301)
 - rmmz_managers: 0% (0/348)
 - rmmz_objects: 0% (0/1458)
 - rmmz_scenes: 0% (0/122)
@@ -22,11 +22,11 @@ The goal is to eliminate all usage of the `any` type in the type definitions. Th
 Tracks which classes and functions have already been manually checked against the original JavaScript implementation to ensure that their members are complete.
 
 <!-- START: ALL_MEMBERS_DEFINED -->
-**Total: 0% (0/159)**
-- main: 0% (0/2)
-  - [ ] *Unmapped globals*
-  - [ ] Main
-- rmmz_core: 0% (0/20)
+**Total: 2% (3/159)**
+- main: 100% (2/2)
+  - [x] *Unmapped globals*
+  - [x] Main
+- rmmz_core: 5% (1/20)
   - [ ] *Unmapped globals*
   - [ ] Utils
   - [ ] Graphics
@@ -43,7 +43,7 @@ Tracks which classes and functions have already been manually checked against th
   - [ ] ColorFilter
   - [ ] Stage
   - [ ] WebAudio
-  - [ ] Video
+  - [x] Video
   - [ ] Input
   - [ ] TouchInput
   - [ ] JsonEx
