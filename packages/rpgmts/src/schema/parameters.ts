@@ -81,11 +81,11 @@ export interface PluginStringArrayParameter extends PluginParameterBase {
 }
 
 export interface PluginNoteParameter extends PluginParameterBase {
-  default?: string[];
+  default?: string;
   type: "note";
 }
 export interface PluginNoteArrayParameter extends PluginParameterBase {
-  default?: string[][];
+  default?: string[];
   type: "note[]";
 }
 
