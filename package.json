@@ -5,7 +5,8 @@
   "scripts": {
     "build": "pnpm run build",
     "docs:rpgmts": "typedoc --options packages/rpgmts/typedoc.json",
-    "build-docs": "pnpm run docs:rpgmts && node postprocess-docs.cjs"
+    "docs:types-mz": "typedoc --options packages/types-mz/typedoc.json",
+    "build-docs": "pnpm run docs:rpgmts && pnpm run docs:types-mz && node postprocess-docs.cjs"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "packageManager": "pnpm@12.11.2",
   "devDependencies": {
     "typedoc": "^0.28.20",
-    "typedoc-material-theme": "^1.4.1"
+    "typedoc-material-theme": "^1.4.1",
+    "typescript": "^6.0.3"
   }
 }

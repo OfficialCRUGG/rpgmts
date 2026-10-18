@@ -1,0 +1,199 @@
+# Progress
+
+These type definitions were initially generated from RPG Maker MZ's JavaScript files. They are being manually reviewed to improve type accuracy and ensure that all members (e.g. functions and properties of a class) are correctly defined.
+
+## Type
+
+The goal is to eliminate all usage of the `any` type in the type definitions. This section tracks the progress of that effort.
+
+<!-- START: ANY_TYPES -->
+**Total: 0% (0/3366)**
+- main: 0% (0/8)
+- rmmz_core: 0% (0/301)
+- rmmz_managers: 0% (0/348)
+- rmmz_objects: 0% (0/1458)
+- rmmz_scenes: 0% (0/122)
+- rmmz_sprites: 0% (0/304)
+- rmmz_windows: 0% (0/825)
+<!-- END: ANY_TYPES -->
+
+## API Completeness
+
+Tracks which classes and functions have already been manually checked against the original JavaScript implementation to ensure that their members are complete.
+
+<!-- START: ALL_MEMBERS_DEFINED -->
+**Total: 0% (0/159)**
+- main: 0% (0/2)
+  - [ ] *Unmapped globals*
+  - [ ] Main
+- rmmz_core: 0% (0/20)
+  - [ ] *Unmapped globals*
+  - [ ] Utils
+  - [ ] Graphics
+  - [ ] Point
+  - [ ] Rectangle
+  - [ ] Bitmap
+  - [ ] Sprite
+  - [ ] Tilemap
+  - [ ] TilingSprite
+  - [ ] ScreenSprite
+  - [ ] Window
+  - [ ] WindowLayer
+  - [ ] Weather
+  - [ ] ColorFilter
+  - [ ] Stage
+  - [ ] WebAudio
+  - [ ] Video
+  - [ ] Input
+  - [ ] TouchInput
+  - [ ] JsonEx
+- rmmz_managers: 0% (0/14)
+  - [ ] *Unmapped globals*
+  - [ ] DataManager
+  - [ ] ConfigManager
+  - [ ] StorageManager
+  - [ ] FontManager
+  - [ ] ImageManager
+  - [ ] EffectManager
+  - [ ] AudioManager
+  - [ ] SoundManager
+  - [ ] TextManager
+  - [ ] ColorManager
+  - [ ] SceneManager
+  - [ ] BattleManager
+  - [ ] PluginManager
+- rmmz_objects: 0% (0/31)
+  - [ ] *Unmapped globals*
+  - [ ] Game_Temp
+  - [ ] Game_System
+  - [ ] Game_Timer
+  - [ ] Game_Message
+  - [ ] Game_Switches
+  - [ ] Game_Variables
+  - [ ] Game_SelfSwitches
+  - [ ] Game_Screen
+  - [ ] Game_Picture
+  - [ ] Game_Item
+  - [ ] Game_Action
+  - [ ] Game_ActionResult
+  - [ ] Game_BattlerBase
+  - [ ] Game_Battler
+  - [ ] Game_Actor
+  - [ ] Game_Enemy
+  - [ ] Game_Actors
+  - [ ] Game_Unit
+  - [ ] Game_Party
+  - [ ] Game_Troop
+  - [ ] Game_Map
+  - [ ] Game_CommonEvent
+  - [ ] Game_CharacterBase
+  - [ ] Game_Character
+  - [ ] Game_Player
+  - [ ] Game_Follower
+  - [ ] Game_Followers
+  - [ ] Game_Vehicle
+  - [ ] Game_Event
+  - [ ] Game_Interpreter
+- rmmz_scenes: 0% (0/24)
+  - [ ] *Unmapped globals*
+  - [ ] Scene_Base
+  - [ ] Scene_Boot
+  - [ ] Scene_Splash
+  - [ ] Scene_Title
+  - [ ] Scene_Message
+  - [ ] Scene_Map
+  - [ ] Scene_MenuBase
+  - [ ] Scene_Menu
+  - [ ] Scene_ItemBase
+  - [ ] Scene_Item
+  - [ ] Scene_Skill
+  - [ ] Scene_Equip
+  - [ ] Scene_Status
+  - [ ] Scene_Options
+  - [ ] Scene_File
+  - [ ] Scene_Save
+  - [ ] Scene_Load
+  - [ ] Scene_GameEnd
+  - [ ] Scene_Shop
+  - [ ] Scene_Name
+  - [ ] Scene_Debug
+  - [ ] Scene_Battle
+  - [ ] Scene_Gameover
+- rmmz_sprites: 0% (0/23)
+  - [ ] *Unmapped globals*
+  - [ ] Sprite_Clickable
+  - [ ] Sprite_Button
+  - [ ] Sprite_Character
+  - [ ] Sprite_Battler
+  - [ ] Sprite_Actor
+  - [ ] Sprite_Enemy
+  - [ ] Sprite_Animation
+  - [ ] Sprite_AnimationMV
+  - [ ] Sprite_Battleback
+  - [ ] Sprite_Damage
+  - [ ] Sprite_Gauge
+  - [ ] Sprite_Name
+  - [ ] Sprite_StateIcon
+  - [ ] Sprite_StateOverlay
+  - [ ] Sprite_Weapon
+  - [ ] Sprite_Balloon
+  - [ ] Sprite_Picture
+  - [ ] Sprite_Timer
+  - [ ] Sprite_Destination
+  - [ ] Spriteset_Base
+  - [ ] Spriteset_Map
+  - [ ] Spriteset_Battle
+- rmmz_windows: 0% (0/52)
+  - [ ] *Unmapped globals*
+  - [ ] Window_Base
+  - [ ] Window_Scrollable
+  - [ ] Window_Selectable
+  - [ ] Window_Command
+  - [ ] Window_HorzCommand
+  - [ ] Window_Help
+  - [ ] Window_Gold
+  - [ ] Window_StatusBase
+  - [ ] Window_MenuCommand
+  - [ ] Window_MenuStatus
+  - [ ] Window_MenuActor
+  - [ ] Window_ItemCategory
+  - [ ] Window_ItemList
+  - [ ] Window_SkillType
+  - [ ] Window_SkillStatus
+  - [ ] Window_SkillList
+  - [ ] Window_EquipStatus
+  - [ ] Window_EquipCommand
+  - [ ] Window_EquipSlot
+  - [ ] Window_EquipItem
+  - [ ] Window_Status
+  - [ ] Window_StatusParams
+  - [ ] Window_StatusEquip
+  - [ ] Window_Options
+  - [ ] Window_SavefileList
+  - [ ] Window_ShopCommand
+  - [ ] Window_ShopBuy
+  - [ ] Window_ShopSell
+  - [ ] Window_ShopNumber
+  - [ ] Window_ShopStatus
+  - [ ] Window_NameEdit
+  - [ ] Window_NameInput
+  - [ ] Window_NameBox
+  - [ ] Window_ChoiceList
+  - [ ] Window_NumberInput
+  - [ ] Window_EventItem
+  - [ ] Window_Message
+  - [ ] Window_ScrollText
+  - [ ] Window_MapName
+  - [ ] Window_BattleLog
+  - [ ] Window_PartyCommand
+  - [ ] Window_ActorCommand
+  - [ ] Window_BattleStatus
+  - [ ] Window_BattleActor
+  - [ ] Window_BattleEnemy
+  - [ ] Window_BattleSkill
+  - [ ] Window_BattleItem
+  - [ ] Window_TitleCommand
+  - [ ] Window_GameEnd
+  - [ ] Window_DebugRange
+  - [ ] Window_DebugEdit
+<!-- END: ALL_MEMBERS_DEFINED -->

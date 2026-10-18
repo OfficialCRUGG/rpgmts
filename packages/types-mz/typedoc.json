@@ -1,0 +1,25 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "types/main.d.ts",
+    "types/rmmz_core.d.ts",
+    "types/rmmz_managers.d.ts",
+    "types/rmmz_objects.d.ts",
+    "types/rmmz_scenes.d.ts",
+    "types/rmmz_sprites.d.ts",
+    "types/rmmz_windows.d.ts",
+    "types/libs/effekseer.d.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "tsconfig": "tsconfig.json",
+  "out": "../../docs/types-mz",
+  "name": "types-mz",
+  "plugin": ["typedoc-material-theme"],
+  "themeColor": "#3384f5",
+  "navigationLinks": {
+    "Home": "/",
+    "rpgmts": "/rpgmts",
+    "@rpgmts/types-mz": "/types-mz",
+    "GitHub": "https://github.com/OfficialCRUGG/rpgmts"
+  }
+}

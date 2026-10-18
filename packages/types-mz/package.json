@@ -1,0 +1,29 @@
+{
+  "name": "@rpgmts/types-mz",
+  "version": "1.0.0",
+  "description": "🏰 Type definitions for RPG Maker MZ",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "extract-types": "node extract-types.cjs"
+  },
+  "keywords": [
+    "rpg-maker",
+    "rpg-maker-mz"
+  ],
+  "author": "OfficialCRUGG <me@crg.sh>",
+  "license": "MIT",
+  "files": [
+    "types/",
+    "LICENSE",
+    "PROGRESS.md",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^14.18.63",
+    "@types/nw.js": "0.13.10",
+    "localforage": "1.7.3",
+    "pixi.js": "5.3.12",
+    "typescript": "^6.0.3"
+  }
+}

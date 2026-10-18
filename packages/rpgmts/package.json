@@ -1,7 +1,7 @@
 {
   "name": "rpgmts",
   "version": "0.1.1",
-  "description": "🏰Toolkit for building RPG Maker MV/MZ plugins with TypeScript",
+  "description": "🏰 Toolkit for building RPG Maker MV/MZ plugins with TypeScript",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
@@ -20,7 +20,9 @@
   "license": "MIT",
   "files": [
     "dist/",
-    "templates/"
+    "templates/",
+    "LICENSE",
+    "README.md"
   ],
   "dependencies": {
     "@clack/prompts": "^1.8.1",

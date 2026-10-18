@@ -9,6 +9,7 @@
   "navigationLinks": {
     "Home": "/",
     "rpgmts": "/rpgmts",
+    "@rpgmts/types-mz": "/types-mz",
     "GitHub": "https://github.com/OfficialCRUGG/rpgmts"
   }
 }
